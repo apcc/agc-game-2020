@@ -1,0 +1,6 @@
+-c
+-Isrc/
+-I/opt/OpenSiv3D/Siv3D/include
+-I/opt/OpenSiv3D/Siv3D/include/ThirdParty/
+-isystem /opt/OpenSiv3D/Siv3D/include/
+-std=c++1z
