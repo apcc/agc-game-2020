@@ -6,23 +6,9 @@ AlignConsecutiveMacros: true
 AlignOperands: false
 AlignTrailingComments: false
 AllowAllParametersOfDeclarationOnNextLine: true
-AllowShortBlocksOnASingleLine: true
 AllowShortCaseLabelsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: WithoutElse
-AllowShortLoopsOnASingleLine: true
-BreakConstructorInitializers: AfterColon
-BreakInheritanceList: AfterColon
 ColumnLimit: 100
 IndentPPDirectives: BeforeHash
-NamespaceIndentation: All
-ReflowComments: false
-SpaceBeforeCpp11BracedList: true
-SpaceBeforeCtorInitializerColon: false
-SpaceBeforeInheritanceColon: false
-SpaceBeforeRangeBasedForLoopColon: false
-SpacesInAngles: false
-SpacesInContainerLiterals: false
 Standard: Cpp11
 UseTab: Never
 ...
