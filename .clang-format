@@ -1,6 +1,6 @@
 ---
 BasedOnStyle: Chromium
-AccessModifierOffset: -4
+AccessModifierOffset: -2
 AlignAfterOpenBracket: AlwaysBreak
 AlignConsecutiveMacros: true
 AlignOperands: false
