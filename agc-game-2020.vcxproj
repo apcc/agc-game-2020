@@ -108,7 +108,13 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Description.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\PlaceObstacle.cpp" />
+    <ClCompile Include="src\Results.cpp" />
+    <ClCompile Include="src\Run.cpp" />
+    <ClCompile Include="src\SelectAction.cpp" />
+    <ClCompile Include="src\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\engine\texture\box-shadow\128.png" />
@@ -233,6 +239,15 @@
     <None Include="App\example\shader\2d\swirl.hlsl">
       <FileType>Document</FileType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\Description.h" />
+    <ClInclude Include="src\PlaceObstacle.h" />
+    <ClInclude Include="src\Results.h" />
+    <ClInclude Include="src\Run.h" />
+    <ClInclude Include="src\SelectAction.h" />
+    <ClInclude Include="src\Title.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
