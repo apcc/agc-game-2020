@@ -2,16 +2,15 @@
 #include <common.hpp>
 #include <scenes.hpp>
 
-void Main()
-{
-	FontAsset::Register(U"TitleFont", 60, Typeface::Heavy);
+void Main() {
+  FontAsset::Register(U"TitleFont", 60, Typeface::Heavy);
 
-	App manager;
+  App manager;
 
-	registerScenes(manager);
+  registerScenes(manager);
 
-	while(System::Update())
-	{
-		if (!manager.update()) break;
-	}
+  while (System::Update()) {
+    if (!manager.update())
+      break;
+  }
 }
