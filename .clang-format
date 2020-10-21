@@ -1,0 +1,14 @@
+---
+BasedOnStyle: Chromium
+AccessModifierOffset: -2
+AlignAfterOpenBracket: AlwaysBreak
+AlignConsecutiveMacros: true
+AlignOperands: false
+AlignTrailingComments: false
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortCaseLabelsOnASingleLine: true
+ColumnLimit: 100
+IndentPPDirectives: BeforeHash
+Standard: Cpp11
+UseTab: Never
+...
