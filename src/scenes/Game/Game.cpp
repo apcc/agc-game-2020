@@ -3,17 +3,19 @@
 Game::Game(const InitData& init) : IScene(init) {}
 
 void Game::update() {
-  // 左クリックで
-  if (MouseL.down()) {
-    // ゲームシーンに遷移
-    changeScene(U"Results");
+  const auto setScene = [&](GameScene newValue) { currentScene = newValue; };
+
+  switch (currentScene) {
+    case GameScene::SelectAction: selectActionUpdate().then(setScene); break;
+    case GameScene::PlaceObstacle: placeObstacleUpdate().then(setScene); break;
+    case GameScene::Run: runUpdate().then(setScene); break;
   }
 }
 
 void Game::draw() const {
-  Scene::SetBackground(ColorF(0.3, 0.4, 0.5));
-
-  FontAsset(U"TitleFont")(U"Game").drawAt(400, 100);
-
-  Circle(Cursor::Pos(), 50).draw(Palette::Orange);
+  switch (currentScene) {
+    case GameScene::SelectAction: selectActionDraw(); break;
+    case GameScene::PlaceObstacle: placeObstacleDraw(); break;
+    case GameScene::Run: runDraw(); break;
+  }
 }
