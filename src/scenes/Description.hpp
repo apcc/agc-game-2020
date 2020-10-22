@@ -6,22 +6,22 @@
 class Description : public App::Scene {
 public:
 
-  // ƒRƒ“ƒXƒgƒ‰ƒNƒ^i•K‚¸À‘•j
+  // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ï¼ˆå¿…ãšå®Ÿè£…ï¼‰
   Description(const InitData& init)
     : IScene(init) {
 
   }
 
-  // XVŠÖ”
+  // æ›´æ–°é–¢æ•°
   void update() override {
-    // ¶ƒNƒŠƒbƒN‚Å
+    // å·¦ã‚¯ãƒªãƒƒã‚¯ã§
     if (MouseL.down()) {
-      // ƒQ[ƒ€ƒV[ƒ“‚É‘JˆÚ
+      // ã‚²ãƒ¼ãƒ ã‚·ãƒ¼ãƒ³ã«é·ç§»
       changeScene(U"Game");
     }
   }
 
-  // •`‰æŠÖ” (const Cü)
+  // æç”»é–¢æ•° (const ä¿®é£¾)
   void draw() const override {
     Scene::SetBackground(ColorF(0.3, 0.4, 0.5));
 
