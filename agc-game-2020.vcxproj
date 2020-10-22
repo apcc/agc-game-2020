@@ -108,6 +108,13 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\class\Field.cpp" />
+    <ClCompile Include="src\class\obstacle\Obstacle.cpp" />
+    <ClCompile Include="src\class\obstacle\trap\Trap.cpp" />
+    <ClCompile Include="src\class\player\Airplane.cpp" />
+    <ClCompile Include="src\class\player\Player.cpp" />
+    <ClCompile Include="src\class\player\Runner.cpp" />
+    <ClCompile Include="src\class\player\Trapper.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -233,6 +240,15 @@
     <None Include="App\example\shader\2d\swirl.hlsl">
       <FileType>Document</FileType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\class\Field.hpp" />
+    <ClInclude Include="src\class\obstacle\Obstacle.hpp" />
+    <ClInclude Include="src\class\obstacle\trap\Trap.hpp" />
+    <ClInclude Include="src\class\player\Airplane.hpp" />
+    <ClInclude Include="src\class\player\Player.hpp" />
+    <ClInclude Include="src\class\player\Runner.hpp" />
+    <ClInclude Include="src\class\player\Trapper.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
