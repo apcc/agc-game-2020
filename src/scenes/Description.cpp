@@ -3,9 +3,7 @@
 Description::Description(const InitData& init) : IScene(init) {}
 
 void Description::update() {
-  // 左クリックで
   if (MouseL.down()) {
-    // ゲームシーンに遷移
     changeScene(U"Results");
   }
 }

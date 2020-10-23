@@ -2,7 +2,6 @@
 
 Optional<GameScene> Game::placeObstacleUpdate() {
   if (MouseL.down()) {
-    // ゲームシーンに遷移
     return GameScene::Run;
   }
   return none;
