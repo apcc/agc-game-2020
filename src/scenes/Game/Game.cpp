@@ -1,6 +1,8 @@
 #include "Game.hpp"
 
-Game::Game(const InitData& init) : IScene(init) {}
+Game::Game(const InitData& init) : IScene(init) {
+  currentScene = GameScene::SelectAction;
+}
 
 void Game::update() {
   const auto setScene = [&](GameScene newValue) { currentScene = newValue; };
