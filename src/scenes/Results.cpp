@@ -6,7 +6,7 @@ void Results::update() {
   // 左クリックで
   if (MouseL.down()) {
     // ゲームシーンに遷移
-    changeScene(U"Results");
+    changeScene(U"Title");
   }
 }
 

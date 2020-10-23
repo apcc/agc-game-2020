@@ -2,8 +2,10 @@
 
 Optional<GameScene> Game::runUpdate() {
   if (MouseL.down()) {
-    // ゲームシーンに遷移
     return GameScene::SelectAction;
+  }
+  if (KeyEnter.down()) {
+    changeScene(U"Results");
   }
   return none;
 }
